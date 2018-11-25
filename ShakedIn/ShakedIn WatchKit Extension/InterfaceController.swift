@@ -11,9 +11,30 @@ import Foundation
 import CoreMotion
 import Alamofire
 import CoreBluetooth
+//import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
+    
+    var isReceiving = false
 
+    @IBAction func didPressSenderRecieverButtonWith(sender: WKInterfaceButton) {
+        
+        var stateText = "Invite"
+        var colour = #colorLiteral(red: 0, green: 0.7501449585, blue: 0.9885035157, alpha: 0.5347816781)
+        
+        switch isReceiving {
+        case false:
+            stateText = "Receive"
+            colour = #colorLiteral(red: 0, green: 0.7501449585, blue: 0.9885035157, alpha: 0.5347816781)
+            isReceiving = true
+        case true:
+            stateText = "Invite"
+            colour = #colorLiteral(red: 0, green: 0.9824226499, blue: 0, alpha: 0.5347816781)
+            isReceiving = false
+        }
+        sender.setTitle(stateText)
+        sender.setBackgroundColor(colour)
+    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         // Configure interface objects here.
@@ -38,7 +59,28 @@ class InterfaceController: WKInterfaceController {
 extension InterfaceController: WatchShakerDelegate
 {
     func watchShaker(_ watchShaker: WatchShaker, didShakeWith sensibility: ShakeSensibility) {
-        print("HELLO WOHAHDSDO")
+        print("Shook hands!!")
+        // didShakeSuccessfully
+        
+        // TODO: Check if isReceiving
+        if (isReceiving) {
+            PhoneSessionManager.sharedManager.sendMessage(message: ["isShaking": true as AnyObject], replyHandler: { response in
+                if response.description == "SUCCESS" {
+                    WKInterfaceDevice.current().play(.success)
+                }
+            }, errorHandler: nil)
+        }
+        // TODO: WKConnectivtySession
+            // WCSession.isSupported(){ let session = WCSession.defaultSession()
+                // session.delegate = self
+                // session.activateSession()}
+        // TODO: Send and/or receive internal linkedin id accordingly
+            // TODO: Create Receiver and Sender objects
+            // TODO:
+        // TODO: WKConnectivitySession
+        // TODO: Haptic Feedback for confirmation
+            // (void)playHaptic:(WKHaptic)WKHapticTypeSuccess
+        // TODO: Optional: Ting sound and checkmark for confirmation
     }
     
     func watchShakerDidShake(_ watchShaker: WatchShaker) {

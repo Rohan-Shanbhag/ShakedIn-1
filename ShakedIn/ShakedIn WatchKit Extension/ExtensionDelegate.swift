@@ -9,6 +9,10 @@
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    
+    override init() {
+        PhoneSessionManager.sharedManager.startSession()
+    }
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.

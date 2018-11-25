@@ -25,6 +25,8 @@
 		FBBB5DF721AA6E6600888250 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DF621AA6E6600888250 /* ComplicationController.swift */; };
 		FBBB5DF921AA6E6600888250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DF821AA6E6600888250 /* Assets.xcassets */; };
 		FBFF647921AA7F7800A24048 /* WatchShaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF647821AA7F7800A24048 /* WatchShaker.swift */; };
+		FBFF647B21AAE6E500A24048 /* PhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF647A21AAE6E500A24048 /* PhoneSessionManager.swift */; };
+		FBFF647D21AAE7AD00A24048 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF647C21AAE7AD00A24048 /* WatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		FBBB5DFA21AA6E6600888250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBBB5DFB21AA6E6600888250 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FBFF647821AA7F7800A24048 /* WatchShaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchShaker.swift; sourceTree = "<group>"; };
+		FBFF647A21AAE6E500A24048 /* PhoneSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSessionManager.swift; sourceTree = "<group>"; };
+		FBFF647C21AAE7AD00A24048 /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		FCF1A182FB41FC7DDE9AE606 /* Pods-ShakedIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn/Pods-ShakedIn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +187,7 @@
 				FBBB5DD421AA6E6500888250 /* Assets.xcassets */,
 				FBBB5DD621AA6E6500888250 /* LaunchScreen.storyboard */,
 				FBBB5DD921AA6E6500888250 /* Info.plist */,
+				FBFF647C21AAE7AD00A24048 /* WatchManager.swift */,
 			);
 			path = ShakedIn;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				FBBB5DF821AA6E6600888250 /* Assets.xcassets */,
 				FBBB5DFA21AA6E6600888250 /* Info.plist */,
 				FBBB5DFB21AA6E6600888250 /* PushNotificationPayload.apns */,
+				FBFF647A21AAE6E500A24048 /* PhoneSessionManager.swift */,
 			);
 			path = "ShakedIn WatchKit Extension";
 			sourceTree = "<group>";
@@ -285,12 +291,22 @@
 				TargetAttributes = {
 					FBBB5DC921AA6E6500888250 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FBBB5DDB21AA6E6500888250 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					FBBB5DEA21AA6E6600888250 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -428,6 +444,7 @@
 			files = (
 				FBBB5DD021AA6E6500888250 /* ViewController.swift in Sources */,
 				FBBB5DCE21AA6E6500888250 /* AppDelegate.swift in Sources */,
+				FBFF647D21AAE7AD00A24048 /* WatchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +457,7 @@
 				FBBB5DF721AA6E6600888250 /* ComplicationController.swift in Sources */,
 				FBBB5DF321AA6E6600888250 /* ExtensionDelegate.swift in Sources */,
 				FBBB5DF121AA6E6600888250 /* InterfaceController.swift in Sources */,
+				FBFF647B21AAE6E500A24048 /* PhoneSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

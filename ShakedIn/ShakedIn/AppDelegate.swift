@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import WatchConnectivity
+import WatchKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    override init() {
+        WatchSessionManager.sharedManager.startSession()
+        WatchSessionManager.sharedManager.updateApplicationContext()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

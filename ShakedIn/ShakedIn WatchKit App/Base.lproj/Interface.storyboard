@@ -8,12 +8,23 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--ShakedInLogo-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ShakedIn_WatchKit_App" customModuleProvider="target">
+                <controller backgroundImage="ShakedInLogo" contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ShakedIn_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView height="1" alignment="left" image="ShakedInLogo" id="mgP-qE-poH"/>
+                        <button width="136" alignment="center" title="Invite" id="1m3-WY-5Sb">
+                            <color key="backgroundColor" red="0.32646656600000001" green="0.73869508250000004" blue="0.96620899439999997" alpha="0.53478167809999999" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="didPressSenderRecieverButtonWithSender:" destination="AgC-eL-Hgc" id="QuZ-d0-ZCw"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="g04-ZY-seA">
+                            <items>
+                                <label width="1" alignment="center" verticalAlignment="bottom" text="Make sure that the recipient has set their mode to recieve." textAlignment="left" numberOfLines="4" id="Vhm-JF-sO4"/>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.67853702910958902" colorSpace="custom" customColorSpace="displayP3"/>
+                        </group>
                     </items>
                 </controller>
             </objects>
