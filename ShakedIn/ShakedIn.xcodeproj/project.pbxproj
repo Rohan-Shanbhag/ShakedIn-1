@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7522A13B101DB28647B4F3B8 /* Pods_ShakedIn_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC0E81851B2619615803E0 /* Pods_ShakedIn_WatchKit_App.framework */; };
+		AC0797B7341D3EAF4EB555A4 /* Pods_ShakedIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ABC2B0ABDD41287C81310A /* Pods_ShakedIn.framework */; };
+		B29A21AAD08B39209AE9B3C7 /* Pods_ShakedIn_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF11C4EBC8BB3DEEA72B018 /* Pods_ShakedIn_WatchKit_Extension.framework */; };
 		FBBB5DCE21AA6E6500888250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DCD21AA6E6500888250 /* AppDelegate.swift */; };
 		FBBB5DD021AA6E6500888250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DCF21AA6E6500888250 /* ViewController.swift */; };
 		FBBB5DD321AA6E6500888250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DD121AA6E6500888250 /* Main.storyboard */; };
@@ -66,6 +69,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3EF11C4EBC8BB3DEEA72B018 /* Pods_ShakedIn_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakedIn_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		546326A4257FDBA6AF894302 /* Pods-ShakedIn WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn WatchKit Extension/Pods-ShakedIn WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9E7E0C74B23AD196BCE733BE /* Pods-ShakedIn WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn WatchKit App/Pods-ShakedIn WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		A6FC0E81851B2619615803E0 /* Pods_ShakedIn_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakedIn_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C36C8AEB235CFD9E349184 /* Pods-ShakedIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn/Pods-ShakedIn.release.xcconfig"; sourceTree = "<group>"; };
+		C3ABC2B0ABDD41287C81310A /* Pods_ShakedIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakedIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B8F082CC68A5B61A2F406F /* Pods-ShakedIn WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn WatchKit App/Pods-ShakedIn WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		E0B03BBE6F2CF791B4FCA479 /* Pods-ShakedIn WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn WatchKit Extension/Pods-ShakedIn WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		FBBB5DCA21AA6E6500888250 /* ShakedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBB5DCD21AA6E6500888250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBBB5DCF21AA6E6500888250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,13 +96,23 @@
 		FBBB5DF821AA6E6600888250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBBB5DFA21AA6E6600888250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBBB5DFB21AA6E6600888250 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FCF1A182FB41FC7DDE9AE606 /* Pods-ShakedIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakedIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShakedIn/Pods-ShakedIn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2EFC74B21FCFFB0FC851CDBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7522A13B101DB28647B4F3B8 /* Pods_ShakedIn_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBBB5DC721AA6E6500888250 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0797B7341D3EAF4EB555A4 /* Pods_ShakedIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +120,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29A21AAD08B39209AE9B3C7 /* Pods_ShakedIn_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6055D0D89817E30F51E025AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCF1A182FB41FC7DDE9AE606 /* Pods-ShakedIn.debug.xcconfig */,
+				B5C36C8AEB235CFD9E349184 /* Pods-ShakedIn.release.xcconfig */,
+				C4B8F082CC68A5B61A2F406F /* Pods-ShakedIn WatchKit App.debug.xcconfig */,
+				9E7E0C74B23AD196BCE733BE /* Pods-ShakedIn WatchKit App.release.xcconfig */,
+				E0B03BBE6F2CF791B4FCA479 /* Pods-ShakedIn WatchKit Extension.debug.xcconfig */,
+				546326A4257FDBA6AF894302 /* Pods-ShakedIn WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2C7BC21F7CA633A5338DE6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3ABC2B0ABDD41287C81310A /* Pods_ShakedIn.framework */,
+				A6FC0E81851B2619615803E0 /* Pods_ShakedIn_WatchKit_App.framework */,
+				3EF11C4EBC8BB3DEEA72B018 /* Pods_ShakedIn_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBBB5DC121AA6E6500888250 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +157,8 @@
 				FBBB5DE021AA6E6500888250 /* ShakedIn WatchKit App */,
 				FBBB5DEF21AA6E6600888250 /* ShakedIn WatchKit Extension */,
 				FBBB5DCB21AA6E6500888250 /* Products */,
+				6055D0D89817E30F51E025AF /* Pods */,
+				A2C7BC21F7CA633A5338DE6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBBB5E0621AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn" */;
 			buildPhases = (
+				FCBEEB68E9DD41430A3F15C2 /* [CP] Check Pods Manifest.lock */,
 				FBBB5DC621AA6E6500888250 /* Sources */,
 				FBBB5DC721AA6E6500888250 /* Frameworks */,
 				FBBB5DC821AA6E6500888250 /* Resources */,
@@ -188,8 +236,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBBB5E0221AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn WatchKit App" */;
 			buildPhases = (
+				79B2CA3350B97AD8817DB1AE /* [CP] Check Pods Manifest.lock */,
 				FBBB5DDA21AA6E6500888250 /* Resources */,
 				FBBB5E0121AA6E6700888250 /* Embed App Extensions */,
+				2EFC74B21FCFFB0FC851CDBE /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBBB5DFE21AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn WatchKit Extension" */;
 			buildPhases = (
+				C20943DA511074345DE3E320 /* [CP] Check Pods Manifest.lock */,
 				FBBB5DE721AA6E6600888250 /* Sources */,
 				FBBB5DE821AA6E6600888250 /* Frameworks */,
 				FBBB5DE921AA6E6600888250 /* Resources */,
+				97769E2A305015915375B75D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +340,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79B2CA3350B97AD8817DB1AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShakedIn WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97769E2A305015915375B75D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShakedIn WatchKit Extension/Pods-ShakedIn WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShakedIn WatchKit Extension/Pods-ShakedIn WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20943DA511074345DE3E320 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShakedIn WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCBEEB68E9DD41430A3F15C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShakedIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBBB5DC621AA6E6500888250 /* Sources */ = {
@@ -471,6 +598,7 @@
 		};
 		FBBB5DFF21AA6E6700888250 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B03BBE6F2CF791B4FCA479 /* Pods-ShakedIn WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +621,7 @@
 		};
 		FBBB5E0021AA6E6700888250 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546326A4257FDBA6AF894302 /* Pods-ShakedIn WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +644,7 @@
 		};
 		FBBB5E0321AA6E6700888250 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B8F082CC68A5B61A2F406F /* Pods-ShakedIn WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -534,6 +664,7 @@
 		};
 		FBBB5E0421AA6E6700888250 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7E0C74B23AD196BCE733BE /* Pods-ShakedIn WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -553,6 +684,7 @@
 		};
 		FBBB5E0721AA6E6700888250 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF1A182FB41FC7DDE9AE606 /* Pods-ShakedIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +703,7 @@
 		};
 		FBBB5E0821AA6E6700888250 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C36C8AEB235CFD9E349184 /* Pods-ShakedIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
