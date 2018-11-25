@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBBB5DCE21AA6E6500888250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DCD21AA6E6500888250 /* AppDelegate.swift */; };
+		FBBB5DD021AA6E6500888250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DCF21AA6E6500888250 /* ViewController.swift */; };
+		FBBB5DD321AA6E6500888250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DD121AA6E6500888250 /* Main.storyboard */; };
+		FBBB5DD521AA6E6500888250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DD421AA6E6500888250 /* Assets.xcassets */; };
+		FBBB5DD821AA6E6500888250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DD621AA6E6500888250 /* LaunchScreen.storyboard */; };
+		FBBB5DDD21AA6E6500888250 /* ShakedIn WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBBB5DDC21AA6E6500888250 /* ShakedIn WatchKit App.app */; };
+		FBBB5DE321AA6E6500888250 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DE121AA6E6500888250 /* Interface.storyboard */; };
+		FBBB5DE521AA6E6600888250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DE421AA6E6600888250 /* Assets.xcassets */; };
+		FBBB5DEC21AA6E6600888250 /* ShakedIn WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBBB5DEB21AA6E6600888250 /* ShakedIn WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBBB5DF121AA6E6600888250 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DF021AA6E6600888250 /* InterfaceController.swift */; };
+		FBBB5DF321AA6E6600888250 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DF221AA6E6600888250 /* ExtensionDelegate.swift */; };
+		FBBB5DF521AA6E6600888250 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DF421AA6E6600888250 /* NotificationController.swift */; };
+		FBBB5DF721AA6E6600888250 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB5DF621AA6E6600888250 /* ComplicationController.swift */; };
+		FBBB5DF921AA6E6600888250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBB5DF821AA6E6600888250 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBBB5DDE21AA6E6500888250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBBB5DC221AA6E6500888250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBB5DDB21AA6E6500888250;
+			remoteInfo = "ShakedIn WatchKit App";
+		};
+		FBBB5DED21AA6E6600888250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBBB5DC221AA6E6500888250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBB5DEA21AA6E6600888250;
+			remoteInfo = "ShakedIn WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBBB5E0121AA6E6700888250 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBBB5DEC21AA6E6600888250 /* ShakedIn WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBB5E0521AA6E6700888250 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBBB5DDD21AA6E6500888250 /* ShakedIn WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBBB5DCA21AA6E6500888250 /* ShakedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBB5DCD21AA6E6500888250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBBB5DCF21AA6E6500888250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBBB5DD221AA6E6500888250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBBB5DD421AA6E6500888250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBB5DD721AA6E6500888250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBBB5DD921AA6E6500888250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBB5DDC21AA6E6500888250 /* ShakedIn WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShakedIn WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBB5DE221AA6E6500888250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FBBB5DE421AA6E6600888250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBB5DE621AA6E6600888250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBB5DEB21AA6E6600888250 /* ShakedIn WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ShakedIn WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBB5DF021AA6E6600888250 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FBBB5DF221AA6E6600888250 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FBBB5DF421AA6E6600888250 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FBBB5DF621AA6E6600888250 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FBBB5DF821AA6E6600888250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBB5DFA21AA6E6600888250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBB5DFB21AA6E6600888250 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBBB5DC721AA6E6500888250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBB5DE821AA6E6600888250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBBB5DC121AA6E6500888250 = {
+			isa = PBXGroup;
+			children = (
+				FBBB5DCC21AA6E6500888250 /* ShakedIn */,
+				FBBB5DE021AA6E6500888250 /* ShakedIn WatchKit App */,
+				FBBB5DEF21AA6E6600888250 /* ShakedIn WatchKit Extension */,
+				FBBB5DCB21AA6E6500888250 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBBB5DCB21AA6E6500888250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBBB5DCA21AA6E6500888250 /* ShakedIn.app */,
+				FBBB5DDC21AA6E6500888250 /* ShakedIn WatchKit App.app */,
+				FBBB5DEB21AA6E6600888250 /* ShakedIn WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBBB5DCC21AA6E6500888250 /* ShakedIn */ = {
+			isa = PBXGroup;
+			children = (
+				FBBB5DCD21AA6E6500888250 /* AppDelegate.swift */,
+				FBBB5DCF21AA6E6500888250 /* ViewController.swift */,
+				FBBB5DD121AA6E6500888250 /* Main.storyboard */,
+				FBBB5DD421AA6E6500888250 /* Assets.xcassets */,
+				FBBB5DD621AA6E6500888250 /* LaunchScreen.storyboard */,
+				FBBB5DD921AA6E6500888250 /* Info.plist */,
+			);
+			path = ShakedIn;
+			sourceTree = "<group>";
+		};
+		FBBB5DE021AA6E6500888250 /* ShakedIn WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBBB5DE121AA6E6500888250 /* Interface.storyboard */,
+				FBBB5DE421AA6E6600888250 /* Assets.xcassets */,
+				FBBB5DE621AA6E6600888250 /* Info.plist */,
+			);
+			path = "ShakedIn WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBBB5DEF21AA6E6600888250 /* ShakedIn WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBBB5DF021AA6E6600888250 /* InterfaceController.swift */,
+				FBBB5DF221AA6E6600888250 /* ExtensionDelegate.swift */,
+				FBBB5DF421AA6E6600888250 /* NotificationController.swift */,
+				FBBB5DF621AA6E6600888250 /* ComplicationController.swift */,
+				FBBB5DF821AA6E6600888250 /* Assets.xcassets */,
+				FBBB5DFA21AA6E6600888250 /* Info.plist */,
+				FBBB5DFB21AA6E6600888250 /* PushNotificationPayload.apns */,
+			);
+			path = "ShakedIn WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBBB5DC921AA6E6500888250 /* ShakedIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBB5E0621AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn" */;
+			buildPhases = (
+				FBBB5DC621AA6E6500888250 /* Sources */,
+				FBBB5DC721AA6E6500888250 /* Frameworks */,
+				FBBB5DC821AA6E6500888250 /* Resources */,
+				FBBB5E0521AA6E6700888250 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBBB5DDF21AA6E6500888250 /* PBXTargetDependency */,
+			);
+			name = ShakedIn;
+			productName = ShakedIn;
+			productReference = FBBB5DCA21AA6E6500888250 /* ShakedIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBBB5DDB21AA6E6500888250 /* ShakedIn WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBB5E0221AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn WatchKit App" */;
+			buildPhases = (
+				FBBB5DDA21AA6E6500888250 /* Resources */,
+				FBBB5E0121AA6E6700888250 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBBB5DEE21AA6E6600888250 /* PBXTargetDependency */,
+			);
+			name = "ShakedIn WatchKit App";
+			productName = "ShakedIn WatchKit App";
+			productReference = FBBB5DDC21AA6E6500888250 /* ShakedIn WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBBB5DEA21AA6E6600888250 /* ShakedIn WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBB5DFE21AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn WatchKit Extension" */;
+			buildPhases = (
+				FBBB5DE721AA6E6600888250 /* Sources */,
+				FBBB5DE821AA6E6600888250 /* Frameworks */,
+				FBBB5DE921AA6E6600888250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShakedIn WatchKit Extension";
+			productName = "ShakedIn WatchKit Extension";
+			productReference = FBBB5DEB21AA6E6600888250 /* ShakedIn WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBBB5DC221AA6E6500888250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = nafehshoaib;
+				TargetAttributes = {
+					FBBB5DC921AA6E6500888250 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FBBB5DDB21AA6E6500888250 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FBBB5DEA21AA6E6600888250 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FBBB5DC521AA6E6500888250 /* Build configuration list for PBXProject "ShakedIn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBBB5DC121AA6E6500888250;
+			productRefGroup = FBBB5DCB21AA6E6500888250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBBB5DC921AA6E6500888250 /* ShakedIn */,
+				FBBB5DDB21AA6E6500888250 /* ShakedIn WatchKit App */,
+				FBBB5DEA21AA6E6600888250 /* ShakedIn WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBBB5DC821AA6E6500888250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBB5DD821AA6E6500888250 /* LaunchScreen.storyboard in Resources */,
+				FBBB5DD521AA6E6500888250 /* Assets.xcassets in Resources */,
+				FBBB5DD321AA6E6500888250 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBB5DDA21AA6E6500888250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBB5DE521AA6E6600888250 /* Assets.xcassets in Resources */,
+				FBBB5DE321AA6E6500888250 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBB5DE921AA6E6600888250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBB5DF921AA6E6600888250 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBBB5DC621AA6E6500888250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBB5DD021AA6E6500888250 /* ViewController.swift in Sources */,
+				FBBB5DCE21AA6E6500888250 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBB5DE721AA6E6600888250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBB5DF521AA6E6600888250 /* NotificationController.swift in Sources */,
+				FBBB5DF721AA6E6600888250 /* ComplicationController.swift in Sources */,
+				FBBB5DF321AA6E6600888250 /* ExtensionDelegate.swift in Sources */,
+				FBBB5DF121AA6E6600888250 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBBB5DDF21AA6E6500888250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBBB5DDB21AA6E6500888250 /* ShakedIn WatchKit App */;
+			targetProxy = FBBB5DDE21AA6E6500888250 /* PBXContainerItemProxy */;
+		};
+		FBBB5DEE21AA6E6600888250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBBB5DEA21AA6E6600888250 /* ShakedIn WatchKit Extension */;
+			targetProxy = FBBB5DED21AA6E6600888250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBBB5DD121AA6E6500888250 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBB5DD221AA6E6500888250 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBBB5DD621AA6E6500888250 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBB5DD721AA6E6500888250 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FBBB5DE121AA6E6500888250 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBB5DE221AA6E6500888250 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBBB5DFC21AA6E6700888250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBBB5DFD21AA6E6700888250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBBB5DFF21AA6E6700888250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
+				INFOPLIST_FILE = "ShakedIn WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.ShakedIn.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FBBB5E0021AA6E6700888250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
+				INFOPLIST_FILE = "ShakedIn WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.ShakedIn.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FBBB5E0321AA6E6700888250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
+				IBSC_MODULE = ShakedIn_WatchKit_Extension;
+				INFOPLIST_FILE = "ShakedIn WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.ShakedIn.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FBBB5E0421AA6E6700888250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
+				IBSC_MODULE = ShakedIn_WatchKit_Extension;
+				INFOPLIST_FILE = "ShakedIn WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.ShakedIn.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FBBB5E0721AA6E6700888250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
+				INFOPLIST_FILE = ShakedIn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.ShakedIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBBB5E0821AA6E6700888250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4W4S3W3Y3;
+				INFOPLIST_FILE = ShakedIn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nafehshoaib.ShakedIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBBB5DC521AA6E6500888250 /* Build configuration list for PBXProject "ShakedIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBB5DFC21AA6E6700888250 /* Debug */,
+				FBBB5DFD21AA6E6700888250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBB5DFE21AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBB5DFF21AA6E6700888250 /* Debug */,
+				FBBB5E0021AA6E6700888250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBB5E0221AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBB5E0321AA6E6700888250 /* Debug */,
+				FBBB5E0421AA6E6700888250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBB5E0621AA6E6700888250 /* Build configuration list for PBXNativeTarget "ShakedIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBB5E0721AA6E6700888250 /* Debug */,
+				FBBB5E0821AA6E6700888250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBBB5DC221AA6E6500888250 /* Project object */;
+}
