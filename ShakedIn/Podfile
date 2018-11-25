@@ -25,4 +25,5 @@ target 'ShakedIn WatchKit Extension' do
 
   # Pods for ShakedIn WatchKit Extension
   pod 'Alamofire'
+  pod 'WatchShaker'
 end

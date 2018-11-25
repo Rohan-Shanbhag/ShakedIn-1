@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A97997F9ECE8054438B6618B43E8106B"
+               BlueprintIdentifier = "F3286E298440DC54D95B740079FD156C"
                BlueprintName = "Pods-ShakedIn WatchKit Extension"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-ShakedIn WatchKit Extension.framework">

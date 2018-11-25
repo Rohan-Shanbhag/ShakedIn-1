@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.8.0)
+  - WatchShaker (0.0.3)
 
 DEPENDENCIES:
   - Alamofire
+  - WatchShaker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - WatchShaker
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  WatchShaker: d3aa6f3215fed0f8ad2d35b9cfae7502237fdfe9
 
-PODFILE CHECKSUM: 468616aec2e61221690d42c55624a4d22503dc71
+PODFILE CHECKSUM: 617ec88616833630ad6af5dea2cfb48e7c33a327
 
 COCOAPODS: 1.5.2

@@ -11,6 +11,27 @@ import ClockKit
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
+    let ComplicationCurrentEntry = "ComplicationCurrentEntry"
+    let appIcon = ""
+    
+    func getPlaceholderTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+        let complicationTem: CLKComplicationTemplate?
+        switch complication.family {
+        case .circularSmall:
+            let circularTemplate = CLKComplicationTemplateCircularSmallSimpleImage()
+            circularTemplate.imageProvider = CLKImageProvider(onePieceImage: UIImage(imageLiteralResourceName: appIcon))
+            complicationTem = circularTemplate
+        case .graphicCircular:
+            let graphicCircularTemplate = CLKComplicationTemplateGraphicCircularImage()
+            graphicCircularTemplate.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(imageLiteralResourceName: appIcon))
+            complicationTem = graphicCircularTemplate
+        default:
+            complicationTem = nil
+            break
+        }
+        handler(complicationTem)
+    }
+    
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
